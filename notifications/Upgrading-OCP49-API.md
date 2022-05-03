@@ -1,4 +1,6 @@
-# API Versioning Issues to Note Before We Upgrade from Openshift 4.8 to 4.9
+# What is Happening?
+
+The Platform Services Team is preparing for an Openshift 4.9 upgrade. There are significant differences between API Versioning in Openshift 4.8 that is installed on the Platform today and Openshift 4.9.
 
 ## Introduction - Openshift Upgrades and Kubernetes
 
@@ -7,7 +9,7 @@ Kubernetes vendor link: <https://kubernetes.io/docs/reference/using-api/deprecat
 
 Red Hat Openshift bases itself off of Kubernetes and then adds additional technologies to create the product we all use today. This means that for each version of Openshift, it is matched against a specific version of Kubernetes.
 
-For example, The version of Kubernetes that is used when we upgraded to Openshift 4.8 is Kubernetes version 1.21. We know this in advance since Red Hat in their release notes will put this version change details in the notes, since many technologies out there might not necessarily have compatibility details regarding Openshift versions, but do have this information for Kubernetes versions. Click [here](https://docs.openshift.com/container-platform/4.8/release_notes/ocp-4-8-release-notes.html#ocp-4-8-about-this-release) to see this for Openshift 4.8, which runs with Kubernetes version 1.21.
+For example, Openshift 4.8 which the Platform was upgraded to in winter 2022 uses Kubernetes version 1.21. Red Hat usually includes the Kubernetes version used by each Openshift version in the release notes, as many technologies out there might not necessarily include details about their compatibility with Openshift versions, but typically have this information for Kubernetes versions. Click [here](https://docs.openshift.com/container-platform/4.8/release_notes/ocp-4-8-release-notes.html#ocp-4-8-about-this-release) to see this for Openshift 4.8, which runs with Kubernetes version 1.21.
 
 ## API Versioning
 
@@ -16,6 +18,8 @@ For example, The version of Kubernetes that is used when we upgraded to Openshif
 When we create or update Kubernetes resources (ie: Deployments, Routes, RoleBindings) inside Openshift, these resources will be defined with various pieces of information, including an API version. This information is processed and handled by the API Server accordingly.
 
 As an API resource matures over time in terms of how it is implemented and maintained, the API maintainers will choose to update the API version to match its level of maturity. For the current wave of API upgrades that will take place when we upgrade Openshift from 4.8 to 4.9 (thus upgrade from Kubernetes 1.21 to 1.22), the affected API resources will be all easily identifiable as being an API resource with version `v1beta1` and that version in Openshift 4.9 will need to be just `v1`.
+
+# What impact may the upgrade to Openshift 4.9 have on my app?
 
 At present Openshift 4.8 will respond to the affected API resources both with API versions `v1beta1` and `v1`, but when we upgrade our Openshift clusters to 4.9, then using API version `v1beta1` for some specific API resources will no longer work and not be created or updated depending on the requests involved.
 
@@ -57,7 +61,7 @@ This method of auditing will also generate false positives, since we may see LIS
 
 ### Request Test Environment in a LAB cluster
 
-For important applications needing full assurance that nothing will break before we move forward to upgrade our PROD Openshift clusters, the best solution if you are not certain that 100% of the issues are addressed is to request via regular channels for requesting a new namespace and specify that LAB is required and why (Openshift 4.9 compatibility tests). We do upgrade our LAB clusters to the new version of Openshift first for both internal testing as well as for scenarios like this.
+For important applications needing full assurance that nothing will break before we move forward to upgrade our PROD Openshift clusters to Openshift 4.9, the recommendation is to request Platform Services Team (mailto:PlatformServicesTeam@gov.bc.ca) a new project set in our LAB cluster where you can deploy your app and test it with Openshift 4.9 before the upgrade takes place in the production clusters. We do upgrade our LAB clusters to the new version of Openshift first for both internal testing as well as for scenarios like this.
 
 ## Frequently Asked Questions
 
