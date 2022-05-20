@@ -15,4 +15,6 @@ Kubernetes allows several types to be set in a service definition <https://kuber
 
 **Do I need to do anything?**
 
-The Platform Ops team has already worked with teams that had these unsupported ServiceTypes in use and cleaned them up.
+The Platform Ops team has already worked with teams that had these unsupported ServiceTypes in use and cleaned them up. This information is shared as FYI to let the product teams on the Private Cloud Openshift Platform know about the measure that are going to put in place that will prevent the product teams from accidentally using an unsupported ServiceType in their service definitions.
+
+Love, Platform Services Team, xo
