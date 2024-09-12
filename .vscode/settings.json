@@ -1,4 +1,8 @@
 {
     "files.eol": "\n",
-    "markdown.extension.toc.githubCompatibility": true
+    "files.insertFinalNewline": true,
+    "markdown.extension.toc.githubCompatibility": true,
+    "cSpell.words": [
+        "Kamloops"
+    ]
 }
