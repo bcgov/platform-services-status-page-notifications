@@ -12,7 +12,7 @@ Starting at [Example: Thursday, April 2 2024 at 6:00 AM PST/PDT] and finishing a
 
 **Will there be an impact on the Platform apps?**
 
-[Example: Yes, we expect a **30 second interruption to traffic** as the confi is applied to the load balancer **@steven.barre** will be monitoring traffic flows]
+[Example: Yes, we expect a **30 second interruption to traffic** as the config is applied to the load balancer @steven.barre will be monitoring traffic flows]
 
 or 
 
