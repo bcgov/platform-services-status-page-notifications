@@ -16,7 +16,7 @@ Starting at [Example: Thursday, April 2 2024 at 6:00 AM PST/PDT] and finishing a
 
 or 
 
-[Example: No, no downtime is expected at the time, for questions contact **steven.barre**]
+[Example: No, no downtime is expected at the time, for questions post in #devops-operations]
 
 **Do I need to do anything?**
 
