@@ -4,13 +4,15 @@ Hi @all, your attention is needed!
 
 LCM 2024 - hpasbckam1460cint01 - Full BGP fail over to Calgary
 
+<https://ociomysc.service-now.com/sp?id=kb_article&table=u_kb_template_technical_information_bulletin&sys_id=ca741d2c975a521449d6f67e6253af87&view=ess>
+
 **When?**
 
 Starting at Sunday December 8th at 12:00am completing before 3:00am
 
 **Will there be an impact on the Platform apps?**
 
-No, no downtime is expected at the time, the switches are redundant.
+No, there may be connections that may be dropped during this process and users will have to reconnect.
 
 For questions post in #devops-operations
 
