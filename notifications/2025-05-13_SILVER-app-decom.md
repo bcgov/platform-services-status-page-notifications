@@ -21,6 +21,7 @@ mcs-silver-app-61.dmz
 mcs-silver-app-62.dmz
 mcs-silver-app-63.dmz
 mcs-silver-app-64.dmz
+mcs-silver-app-65.dmz
 
 **Do I need to do anything?**
 
