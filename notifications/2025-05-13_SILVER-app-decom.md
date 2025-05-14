@@ -12,7 +12,7 @@ Starting Wednesday May 21st @ 9:00AM and possibly running as late as 4:00PM on M
 
 **Will there be an impact on the Platform apps?**
 
-SILVER pods will be drained from the impacted servers and re-scheduled to new nodes. Once the new node is drained and cordoned, the new replacement physical node will be brought online and put into service. Finally the old node will be removed from the cluster. This will be completed on one node at a time.
+New SILVER nodes will be brought online. SILVER pods will be drained from the impacted servers and re-scheduled to new nodes. Finally the old nodes will be removed from the cluster. This will be completed on one node at a time.
 
 Impacted nodes are:
 mcs-silver-app-59.dmz
