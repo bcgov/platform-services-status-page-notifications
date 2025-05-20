@@ -8,7 +8,7 @@ RFC XXXXX (if applicable)
 
 **When?**
 
-Starting at [Example: Thursday, April 2 2024 at 6:00 AM PST/PDT] and finishing at [Example: Thursday, April 3 at 9:00 AM PST/PDT]
+Starting at [Example: Thursday, April 2 2024 at 6:00 AM] and finishing before [Example: Thursday, April 3 at 9:00 AM]
 
 **Will there be an impact on the Platform apps?**
 
