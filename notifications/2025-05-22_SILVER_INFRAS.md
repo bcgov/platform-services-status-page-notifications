@@ -8,7 +8,7 @@ Migrating 3 SILVER INFRA nodes from Virtual to Physical
 
 **When?**
 
-Starting Tuesday May 27st @ 9:00AM and running until 4:30PM.
+Starting Tuesday May 27th @ 9:00AM and running until 4:30PM.
 
 **Will there be an impact on the Platform apps?**
 
