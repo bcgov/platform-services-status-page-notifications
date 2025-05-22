@@ -12,7 +12,7 @@ Starting Tuesday May 27th @ 9:00AM and running until 4:30PM.
 
 **Will there be an impact on the Platform apps?**
 
-SILVER pods will be drained from the impacted servers and re-scheduled. The old nodes will be removed from the cluster and replaced by newly built nodes. This will be completed on one node at a time. It is not expected to be particularly disruptive as applications are not hosted on these servers.
+SILVER pods will be drained from the impacted servers and re-scheduled. The old nodes will be removed from the cluster and replaced by newly built nodes. This will be completed on one node at a time. The HAProxy routers are hosted on these servers so connections will drop as it fails over. Otherwise it is not expected to be particularly disruptive as applications are not hosted on these servers.
 
 Impacted nodes are:
 mcs-silver-infra-04.dmz
