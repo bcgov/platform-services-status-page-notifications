@@ -1,10 +1,10 @@
-Hi @all, your attention is needed! 
+Hi @all, your attention is needed!
 
 **What is happening?**
 
 RFC XXXXX (if applicable)
 
-[Provide plan language description of the changes and determine audience (Product owners? Developers?) 
+[Provide plan language description of the changes and determine audience (Product owners? Developers?)
 
 **When?**
 
@@ -14,7 +14,7 @@ Starting at [Example: Thursday, April 2 2024 at 6:00 AM] and finishing before [E
 
 [Example: Yes, we expect a **30 second interruption to traffic** as the config is applied to the load balancer @steven.barre will be monitoring traffic flows]
 
-or 
+or
 
 [Example: No, no downtime is expected at the time, for questions post in #devops-operations]
 
