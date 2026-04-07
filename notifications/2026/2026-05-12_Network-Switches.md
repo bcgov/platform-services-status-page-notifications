@@ -2,9 +2,9 @@ Hi @all, your attention is needed!
 
 **What is happening?**
 
-CHG0077435 STMS NET - Switch refresh MCS (Open Shift) Calgary Gold-DR
-CHG0077437 STMS NET - Switch refresh MCS (Open Shift) Kamloops Silver
-CHG0077439 STMS NET - Switch refresh MCS (Open Shift) Kamloops Gold
+CHG0077435 STMS NET - Switch refresh MCS (OpenShift) Calgary Gold-DR
+CHG0077437 STMS NET - Switch refresh MCS (OpenShift) Kamloops Silver
+CHG0077439 STMS NET - Switch refresh MCS (OpenShift) Kamloops Gold
 
 Network traffic for the production and storage interfaces of the OpenShift clusters will be migrated to new switches.
 
