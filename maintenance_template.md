@@ -4,7 +4,7 @@ Hi @channel, your attention is needed!
 
 RFC XXXXX (if applicable)
 
-[Provide plan language description of the changes and determine audience (Product owners? Developers?)
+[Provide plain language description of the changes and determine audience (Product owners? Developers?)
 
 ## When?
 
