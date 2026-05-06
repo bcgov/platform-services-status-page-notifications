@@ -24,7 +24,7 @@ or
 
 [If yes, describe in plain language the changes required to be made by the *app team and product owner* before *and* after the change]
 
-*Check the #devops-alert channel for the announcement of when the change is complete and check the health of your app.*
+*Check the MS Teams Openshift-alerts channel for the announcement of when the change is complete and check the health of your app.*
 
 ## Where do I get help if my app doesn't work after the change is complete?
 
