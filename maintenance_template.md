@@ -16,7 +16,7 @@ Starting at [Example: Thursday, April 2 2024 at 6:00 AM] and finishing before [E
 
 or
 
-[Example: No, no downtime is expected at the time, for questions post in #devops-operations]
+[Example: No, no downtime is expected at the time, for questions post in Openshift-operations]
 
 ## Do I need to do anything?
 
