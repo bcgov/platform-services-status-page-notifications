@@ -15,8 +15,8 @@ These six changes represent the work involved to upgrade the production clusters
 Gold Prep will run Sunday June 7th 6am to 9am
 Gold Upgrade will run Monday June 8th to 12th 9am to 5pm each weekday.
 
-Gold Prep will run Sunday June 14th 6am to 9am
-Gold Upgrade will run Monday June 15th to 19th 9am to 5pm each weekday.
+GoldDR Prep will run Sunday June 14th 6am to 9am
+GoldDR Upgrade will run Monday June 15th to 19th 9am to 5pm each weekday.
 
 ## Will there be an impact on the Platform apps?
 
