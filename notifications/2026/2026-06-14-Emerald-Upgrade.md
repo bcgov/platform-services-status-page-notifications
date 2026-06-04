@@ -2,9 +2,6 @@ Hi @channel, your attention is needed!
 
 ## What is happening?
 
-CHG0078371 CITZ - PROD - MCS GOLD - Pre-upgrade prep work for 4.18
-CHG0078372 CITZ - PROD - MCS GOLD - Upgrade to 4.18
-
 CHG0079162 CITZ - PROD - MCS EMERALD - Pre-upgrade prep work for 4.18
 CHG0079163 CITZ - PROD - MCS EMERALD - Upgrade to 4.18
 
