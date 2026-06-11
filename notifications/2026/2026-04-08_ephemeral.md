@@ -24,8 +24,8 @@ CGH2222 - GOLDDR Cluster - July 9th @ 10:00 AM
 Most workloads will not be impacted. However, teams that use larger amounts of ephemeral storage may need to adjust their configurations.
 You may be affected if your applications:
 
-Write significant data to directories not backed by PVCs (e.g., /tmp, /var/lib, or application data directories)
-Use emptyDir volumes for storing large datasets (e.g., dev/test databases)
+- Write significant data to directories not backed by PVCs (e.g., /tmp, /var/lib, or application data directories)
+- Use emptyDir volumes for storing large datasets (e.g., dev/test databases)
 
 ## How to Check Your Usage
 
