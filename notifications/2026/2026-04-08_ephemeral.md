@@ -58,4 +58,4 @@ resources:
 
 ## Where can I find help?
 
-If you run into trouble with these changes, please post your troubleshooting steps in Openshift-operations in MS Teams. Please make sure you include the cluster and namespace that you’re working on, as well as details about what problem(s) you're experiencing.
+If you run into trouble with these changes, please post your troubleshooting steps in Openshift-operations channel. Please make sure you include the cluster and namespace that you’re working on, as well as details about what problem(s) you're experiencing.
