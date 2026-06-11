@@ -1,42 +1,61 @@
-Hi @all, your attention is needed!
+Hi @channel, your attention is needed!
 
-**What is happening?**
+## What's happening?
 
-To prevent issues caused by nodes running out of storage, we are implementing a quota on ephemeral storage. This is not a limit on PVC usage. It only applies to storage used without a PVC. We will set a default limit of 1 Gi for all new pods, along with a namespace-wide quota of 100 Gi for ephemeral storage.
+To prevent issues caused by nodes running out of storage, we will be introducing limits on ephemeral storage usage.
 
-This change may affect teams that use a large amount of ephemeral storage. You may need to adjust the default limits if your workloads require more than the 1 Gi per pod allowed in your namespace.
+- This change does not affect PVC usage.
+- It applies only to storage that is not backed by a PVC (e.g., emptyDir, container writable layers, etc.).
 
-You can check your usage by inspecting how much data your pods are writing to directories that are not backed by a mounted PVC. Examples include emptyDir volumes which could include /tmp, /var/lib, or application data directories. If you notice you are using an unusually high amount of ephemeral storage, consider using PVCs instead of writing to an emptyDir.
+We will implement:
 
-If you are using a large amount of ephemeral storage you may need to increase your default pod allowances. An example of this can be found if you edit a pod (potentially a statefulset or deployment):
+- A default per-pod limit of 1 Gi of ephemeral storage
+- A namespace-wide quota of 100 Gi of ephemeral storage
 
-[...]
-    Limits:
-      cpu:                500m
-      ephemeral-storage:  1Gi
-      memory:             512Mi
-[...]
+These changes will be rolled out in the PROD clusters on the following dates:
 
-In this instance you may need to increase the ephemeral-storage limit on this pod if you require more than the 1Gi provided.
+CGH1234 - SILVER Cluster - July 7th @ 10:00 AM
+CGH3333 - EMERALD Cluster - July 7th @ 10:00 AM
+CGH1111 - GOLD Cluster - July 8th @ 10:00 AM
+CGH2222 - GOLDDR Cluster - July 9th @ 10:00 AM
 
-**When?**
+## How do I know if this affects me?
 
-SILVER, EMERALD, GOLD and GOLDDR will have these new limits updated on April 29th between 9 AM and 4 PM.
+Most workloads will not be impacted. However, teams that use larger amounts of ephemeral storage may need to adjust their configurations.
+You may be affected if your applications:
 
-**Will there be an impact on the Platform apps?**
+Write significant data to directories not backed by PVCs (e.g., /tmp, /var/lib, or application data directories)
+Use emptyDir volumes for storing large datasets (e.g., dev/test databases)
 
-There will be no immediate impact unless you are using a large amount of ephemeral storage.
+## How to Check Your Usage
 
-**Do I need to do anything?**
+You can review ephemeral storage usage by inspecting your pods and checking disk usage in non-PVC directories. For example: `du -sh /path/to/directory`
+Focus on:
 
-Ephemeral storage is temporary storage that is not a PVC. Currently it is unlimited per pod but this could potentially cause issues if all the ephemeral storage on a node is exhausted. You will need to check your emptyDir mount points for usage with the 'du' command. We don't anticipate that this change will impact most teams, but we have noted a few namespaces that are using ephemeral storage for dev/test databases without assigning a PVC.
+- emptyDir volumes
+- Temporary directories like /tmp
 
-If you are using more than 1Gi of ephemeral storage per pod, you will need to monitor your pods and increase the amount available to the pod as needed.
+If you find high usage, consider moving that data to a Persistent Volume Claim (PVC).
 
-**Check the #devops-alert channel for the announcement of when the change is complete and check the health of your app.**
+## What actions do I need to take?
 
-**Where do I get help if my app doesn't work after the change is complete?**
+If your pods currently use more than 1 Gi of ephemeral storage, you will need to:
 
-Each Platform application has an assigned DevOps Specialist within the Ministry so contact them first. If you don't know who your assigned DevOps Specialist, check with the app's Product Owner.
+- Monitor your usage
+- Update pod resource limits where necessary
 
-The DevOps Specialist will troubleshoot the issue with the app and if they need help, they will reach out to the Platform Services Team and the Developer Community in RocketChat as per these [RocketChat Channel Use Guidelines](https://developer.gov.bc.ca/docs/default/component/bc-developer-guide/rocketchat/rocketchat-channel-descriptions/).
+Example pod configuration:
+
+```text
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+    ephemeral-storage: 1Gi
+```
+
+*Check the MS Teams Openshift-alerts channel for the announcement of when the change is complete and check the health of your app.*
+
+## Where can I find help?
+
+If you run into trouble with these changes, please post your troubleshooting steps in Openshift-operations in MS Teams. Please make sure you include the cluster and namespace that you’re working on, as well as details about what problem(s) you're experiencing.
