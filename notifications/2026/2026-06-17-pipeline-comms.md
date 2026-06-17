@@ -6,7 +6,7 @@ An example YAML snippet showing what needs to be replaced and the equivalent usi
 
 Replace the following:
 
-```
+```yaml
       taskRef:​
         kind: ClusterTask​
         name: openshift-client​
@@ -14,7 +14,7 @@ Replace the following:
 
 with this:
 
-```
+```yaml
       taskRef:​
         resolver: cluster​
         params:​
