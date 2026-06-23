@@ -9,8 +9,8 @@ To prevent issues caused by nodes running out of storage, we will be introducing
 
 We will implement:
 
-- A default per-pod limit of 1 Gi of ephemeral storage
-- A namespace-wide quota of 100 Gi of ephemeral storage
+- A default per-pod limit of 500Mi of ephemeral storage
+- A namespace-wide quota of 15 Gi of ephemeral storage
 
 These changes will be rolled out in the PROD clusters on the following dates:
 
