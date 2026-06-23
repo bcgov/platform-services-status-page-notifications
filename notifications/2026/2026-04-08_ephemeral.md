@@ -14,10 +14,10 @@ We will implement:
 
 These changes will be rolled out in the PROD clusters on the following dates:
 
-CGH1234 - SILVER Cluster - July 7th @ 10:00 AM  
-CGH3333 - EMERALD Cluster - July 7th @ 10:00 AM  
-CGH1111 - GOLD Cluster - July 8th @ 10:00 AM  
-CGH2222 - GOLDDR Cluster - July 9th @ 10:00 AM  
+CHG0079608 - SILVER Cluster - July 7th @ 10:00 AM
+CHG0079607 - EMERALD Cluster - July 7th @ 10:00 AM
+CHG0079609 - GOLD Cluster - July 8th @ 10:00 AM
+CHG0079610 - GOLDDR Cluster - July 9th @ 10:00 AM 
 
 ## How do I know if this affects me?
 
