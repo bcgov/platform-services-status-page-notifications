@@ -1,0 +1,31 @@
+Hi @Openshift-alerts, your attention is needed!
+
+## What is happening?
+
+CHG0081233 - CITZ MCS SILVER - Apply security and performance improvements
+CHG0081234 - CITZ MCS GOLD - Apply security and performance improvements
+CHG0081235 - CITZ MCS GOLDDR - Apply security and performance improvements
+
+## When?
+
+CHG0081233 - SILVER - Starting at 0600 AM on Sunday September 27th through October 16th.
+CHG0081234 - GOLD - Starting at 0600 AM on Sunday October 18th through October 23rd.
+CHG0081235 - GOLDDR - Starting at 0600 AM on Sunday October 25th through October 30th.
+
+We will perform the main upgrades between 0900 AM and 0500 PM on the weekdays.
+
+## Will there be an impact on the Platform apps?
+
+This maintenance will involve draining and rebooting nodes to update the Openshift version as well as the firmware. It will be disruptive, so please monitor your applications.
+
+## Do I need to do anything?
+
+No, monitor your applications as usual.
+
+*Check the MS Teams Openshift-alerts channel for the announcement of when the change is complete and check the health of your app.*
+
+## Where do I get help if my app doesn't work after the change is complete?
+
+Each Platform application has an assigned DevOps Specialist within the Ministry so contact them first. If you don't know who your assigned DevOps Specialist, check with the app's Product Owner.
+
+The DevOps Specialist will troubleshoot the issue with the app and if they need help, they will reach out to the Platform Services Team and the Developer Community in MS Teams.
